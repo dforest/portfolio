@@ -1,0 +1,63 @@
+[
+  {
+    "image": "../images/works/2020/stadium-app.png",
+    "date": "2020/10/30",
+    "caption": "Stadium App™",
+    "description": "Unity as a Libraryを利用したUnityの設計、開発を担当しました。",
+    "tags": [
+      "Unity", "CSharp", "UniRx", "Zenject"
+    ],
+    "links": [
+      "https://stadium-experiment.com/"
+    ]
+  },
+  {
+    "image": "../images/works/2020/virtual-distortion.png",
+    "date": "2020/08/02",
+    "caption": "VARP x kZm “VIRTUAL DISTORTION”",
+    "description": "バーチャルライブのバックエンドサービスの構築と、UE4用バックエンド接続プラグインの開発を担当しました。",
+    "tags": [
+      "UE4", "C++", "Python", "GCP", "Firestore"
+    ],
+    "links": [
+      "https://prty.jp/work/varp-x-kzm",
+      "https://kzm.varp.jp/"
+    ]
+  },
+  {
+    "image": "../images/works/2019/expo2025-osaka.png",
+    "date": "2019/11/19",
+    "caption": "PARTY x noiz architects EXPO 2025 OSAKA",
+    "description": "Kinect v2によるヘッドトラッキングアプリの開発を担当しました。",
+    "tags": [
+      "Kinect v2", "C++", "PCL"
+    ],
+    "links": [
+      "https://prty.jp/work/expo-2025-osaka"
+    ]
+  },
+  {
+    "image": "../images/works/2019/fujirock19-exp.png",
+    "date": "2019/07/26",
+    "caption": "FUJI ROCK `19 EXPerience by SoftBank 5G",
+    "description": "バーチャルライブのバックエンドサービスの構築と、UE4用バックエンド接続プラグイン、管理用ウェブツールの開発・運用を担当しました。",
+    "tags": [
+      "UE4", "C++", "Python", "GCP", "Firestore", "React"
+    ],
+    "links": [
+      "https://prty.jp/work/fuji-rock-19-experience"
+    ]
+  },
+  {
+    "image": "../images/works/2019/fujirock19-app.png",
+    "date": "2019/07/26",
+    "caption": "FUJI ROCK `19 by SoftBank 5G",
+    "description": "Androidアプリの設計・開発を担当しました。",
+    "tags": [
+      "Android", "Kotlin", "RxJava", "Retrofit", "Room", "Dagger"
+    ],
+    "links": [
+      "https://prty.jp/work/fuji-rock-19-by-softbank-5g"
+    ]
+  }
+]

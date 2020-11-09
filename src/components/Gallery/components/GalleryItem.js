@@ -1,36 +1,57 @@
-import React, { useCallback } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
-const GalleryItem = ({id, source, thumbnail, caption, description, position, toggleLightbox}) => {
+const GalleryItem = ({id, image, tags, date, caption, description, links}) => {
 
-    const onClick = useCallback((e) => {
-        e.preventDefault()
-        toggleLightbox(position)
-    }, [position, toggleLightbox]);
+  const formatDate = (date) => {
+    return `
+    ${(date.getMonth()+1).toString().padStart(2, '0')}
+    .${date.getFullYear()}
+    `.replace(/\n|\r|\s/g, '');
+  }
 
-    return (<article key={id} className="6u 12u$(xsmall) work-item">
-        <a
-        className="image fit thumb"
-        href={source}
-        onClick={onClick}
-        >
-        <img src={thumbnail} />
-        </a>
+  return (<article key={id} className="row 75% work-item">
+    <div className="12u date">
+      <p>{formatDate(date)}</p>
+    </div>
+    <div className="6u image col">
+    <img src={image} />
+    </div>
 
-        <h3>{caption}</h3>
-        <p>{description}</p>
+    <div className="6u col">
+      <h3>{caption}</h3>
+      {
+        tags && (<ul className="tags">
+          {tags.map((tag) => {
+            return (<li className="tag">#{tag}</li>)
+          })}
+        </ul>)
+      }
+      <p>{description}</p>
+      {
+        links && (<ul className="tags">
+          {links.map((link, i) => {
+            return (<li className="tag">
+              <a href={link} className="icon fa-external-link">
+                <span className="label">LINK{i+1}</span>
+              </a>
+            </li>)
+          })}
+        </ul>)
+      }
+    </div>
     </article>)
 };
 
 GalleryItem.displayName = 'GalleryItem'
 GalleryItem.propTypes = {
   id: PropTypes.string.isRequired,
-  source: PropTypes.string.isRequired,
-  thumbnail: PropTypes.string.isRequired,
+  tags: PropTypes.array.isRequired,
+  date: PropTypes.instanceOf(Date).isRequired,
+  image: PropTypes.string.isRequired,
   caption: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  position: PropTypes.string.isRequired,
-  toggleLightbox: PropTypes.func.isRequired
+  links: PropTypes.array.isRequired
 }
 
 export default GalleryItem

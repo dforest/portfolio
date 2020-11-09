@@ -1,50 +1,54 @@
-import React, { useState, useCallback } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
-import Carousel, { Modal, ModalGateway } from 'react-images'
+import { useStaticQuery, graphql } from "gatsby"
 import GalleryItem from './GalleryItem'
-import { DEFAULT_IMAGES } from '../constants/defaultImages'
 
-const Gallery = ({ images = DEFAULT_IMAGES }) => {
-  const [lightboxIsOpen, setLightboxIsOpen] = useState(false)
-  const [selectedIndex, setSelectedIndex] = useState(0)
-
-  const toggleLightbox = useCallback(selectedIndex => {
-    setLightboxIsOpen(!lightboxIsOpen)
-    setSelectedIndex(selectedIndex)
-  }, [lightboxIsOpen])
+const Gallery = () => {
+  const works = useStaticQuery(graphql`
+  query MyQuery {
+    allWorksJson {
+      nodes {
+        caption
+        date
+        description
+        id
+        tags
+        links
+        image {
+          childImageSharp {
+            fluid {
+              src
+            }
+          }
+        }
+      }
+    }
+  }
+  `)
 
   return (
     <div>
-      {images && (<div className="row">
-        {images.map((obj, i) => {
+      {works && (<div>
+        {works.allWorksJson.nodes.map((obj) => {
         return (<GalleryItem
           id={obj.id}
-          source={obj.source}
-          thumbnail={obj.thumbnail}
+          image={obj.image && obj.image.childImageSharp.fluid.src}
+          tags={obj.tags}
+          date={new Date(obj.date)}
           caption={obj.caption}
           description={obj.description}
-          position={obj.position}
-          toggleLightbox={obj.toggleLightbox}
-          position={i}
-          toggleLightbox={toggleLightbox}
-        />); 
+          links={obj.links}
+        />);
         })}
         </div>
       )}
-      <ModalGateway>
-        {lightboxIsOpen && (
-          <Modal onClose={toggleLightbox}>
-            <Carousel currentIndex={selectedIndex} views={images} />
-          </Modal>
-        )}
-      </ModalGateway>
     </div>
   )
 }
 
 Gallery.displayName = 'Gallery'
 Gallery.propTypes = {
-  images: PropTypes.array,
+  works: PropTypes.array,
 }
 
 export default Gallery
