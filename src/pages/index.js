@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Gallery from '../components/Gallery'
+import Posts from '../components/Posts'
 import Layout from '../components/layout'
 
 const HomeIndex = () => {
@@ -16,84 +17,41 @@ const HomeIndex = () => {
       </Helmet>
 
       <div id="main">
+        <section id="Bio">
+          <h2>Bio</h2>
+          <p>
+            大学卒業後、ワークスアプリケーションズ、株式会社奇兵隊の取締役CPOを経て、2019年にPARTYに参加。Androidアプリとバックエンドを中心に、幅広い技術を使って開発を行う。UX設計やグロースなど、サービスを一貫して設計・開発することを得意とする。
+          </p>
+
+        </section>
         <section id="works">
-          <h2>Works</h2>
+          <h2>Recent Works</h2>
 
           <Gallery />
 
         </section>
 
-        <section id="three">
+        <section id="posts">
+          <h2>Recent Posts</h2>
+
+          <Posts />
+
+        </section>
+
+        {/* <section id="contacts">
           <h2>Get In Touch</h2>
           <p>
-            Accumsan pellentesque commodo blandit enim arcu non at amet id arcu
-            magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem
-            vulputate lorem neque lorem ipsum dolor.
+            お仕事の依頼などありましたらご連絡ください。
           </p>
-          <div className="row">
-            <div className="8u 12u$(small)">
-              <form method="post" action="#">
-                <div className="row uniform 50%">
-                  <div className="6u 12u$(xsmall)">
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Name"
-                    />
-                  </div>
-                  <div className="6u 12u$(xsmall)">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="Email"
-                    />
-                  </div>
-                  <div className="12u">
-                    <textarea
-                      name="message"
-                      id="message"
-                      placeholder="Message"
-                      rows="4"
-                    ></textarea>
-                  </div>
-                </div>
-                <ul className="actions" style={{ marginTop: 30 }}>
-                  <li>
-                    <input type="submit" value="Send Message" />
-                  </li>
-                </ul>
-              </form>
-            </div>
-            <div className="4u 12u$(small)">
-              <ul className="labeled-icons">
-                <li>
-                  <h3 className="icon fa-home">
-                    <span className="label">Address</span>
-                  </h3>
-                  1234 Somewhere Rd.
-                  <br />
-                  Nashville, TN 00000
-                  <br />
-                  United States
-                </li>
-                <li>
-                  <h3 className="icon fa-mobile">
-                    <span className="label">Phone</span>
-                  </h3>
-                  000-000-0000
-                </li>
-                <li>
-                  <h3 className="icon fa-envelope-o">
-                    <span className="label">Email</span>
-                  </h3>
-                  <a href="#">hello@untitled.tld</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
+          <ul className="labeled-icons">
+            <li>
+              <h3 className="icon fa-envelope-o">
+                <span className="label">Email</span>
+              </h3>
+              info👻mkit.lab
+            </li>
+          </ul>
+        </section> */}
       </div>
     </Layout>
   )

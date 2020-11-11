@@ -15,17 +15,20 @@ const Footer = () => (
           </a>
         </li>
         <li>
-          <a href="#" className="icon fa-rss">
+          <a href="#posts" className="icon fa-rss">
             <span className="label">Blogs</span>
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="#" className="icon fa-envelope-o">
             <span className="label">Contacts</span>
           </a>
-        </li>
+        </li> */}
       </ul>
       <ul className="copyright">
+        <li>
+          © Keita Mori
+        </li>
         <li>
           Design based on <a href="http://html5up.net">HTML5 UP</a>
         </li>

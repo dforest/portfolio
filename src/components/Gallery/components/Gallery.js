@@ -5,7 +5,7 @@ import GalleryItem from './GalleryItem'
 
 const Gallery = () => {
   const works = useStaticQuery(graphql`
-  query MyQuery {
+  {
     allWorksJson {
       nodes {
         caption

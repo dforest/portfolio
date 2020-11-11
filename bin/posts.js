@@ -7,7 +7,7 @@ const rss = [
   `https://qiita.com/d_forest/feed`,
 ]
 const parser = new Parser()
-const count = 30
+const count = 10
 
 async function fetchPosts(url) {
   const feed = await parser.parseURL(url)
