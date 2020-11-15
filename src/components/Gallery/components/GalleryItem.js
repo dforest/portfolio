@@ -10,7 +10,7 @@ const GalleryItem = ({id, image, tags, date, caption, description, links}) => {
     `.replace(/\n|\r|\s/g, '');
   }
 
-  return (<article key={id} className="row 75% work-item">
+  return (<article className="row 75% work-item">
     <div className="12u date">
       <p>{formatDate(date)}</p>
     </div>
@@ -23,7 +23,7 @@ const GalleryItem = ({id, image, tags, date, caption, description, links}) => {
       {
         tags && (<ul className="tags">
           {tags.map((tag) => {
-            return (<li className="tag">#{tag}</li>)
+            return (<li key={id+tag} className="tag">#{tag}</li>)
           })}
         </ul>)
       }
@@ -31,7 +31,7 @@ const GalleryItem = ({id, image, tags, date, caption, description, links}) => {
       {
         links && (<ul className="tags">
           {links.map((link, i) => {
-            return (<li className="tag">
+            return (<li key={id+"link"+i} className="tag">
               <a href={link} className="icon fa-external-link">
                 <span className="label">LINK{i+1}</span>
               </a>

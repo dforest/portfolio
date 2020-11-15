@@ -31,6 +31,7 @@ const Gallery = () => {
       {works && (<div>
         {works.allWorksJson.nodes.map((obj) => {
         return (<GalleryItem
+          key={obj.id}
           id={obj.id}
           image={obj.image && obj.image.childImageSharp.fluid.src}
           tags={obj.tags}

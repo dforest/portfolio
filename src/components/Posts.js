@@ -35,7 +35,7 @@ const Posts = () => {
         <div className="12u col">
           <a href={obj.link}>
             <h3>{obj.title}</h3>
-            <p class="site">
+            <p className="site">
               <img src={faviconSrc(host)} />{host}
             </p>
           </a>

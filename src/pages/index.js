@@ -17,22 +17,22 @@ const HomeIndex = () => {
       </Helmet>
 
       <div id="main">
-        <section id="Bio">
+        {/* <section id="bio">
           <h2>Bio</h2>
           <p>
             大学卒業後、ワークスアプリケーションズ、株式会社奇兵隊の取締役CPOを経て、2019年にPARTYに参加。Androidアプリとバックエンドを中心に、幅広い技術を使って開発を行う。UX設計やグロースなど、サービスを一貫して設計・開発することを得意とする。
           </p>
 
-        </section>
+        </section> */}
         <section id="works">
-          <h2>Recent Works</h2>
+          {/* <h2>Recent Works</h2> */}
 
           <Gallery />
 
         </section>
 
         <section id="posts">
-          <h2>Recent Posts</h2>
+          {/* <h2>Recent Posts</h2> */}
 
           <Posts />
 
