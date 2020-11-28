@@ -6,14 +6,27 @@ import Posts from '../components/Posts'
 import Layout from '../components/layout'
 
 const HomeIndex = () => {
-  const siteTitle = 'mkit lab.'
+  const siteTitle = 'Mkit lab.'
   const siteDescription = 'Keita Mori / App Engineer, This is my portfolio.'
+  const siteUrl =  'https://mkitlab.com'
+  const siteImage =  '/images/og_image.png'
+  const twitterUserName = '@d_forest'
 
   return (
     <Layout>
       <Helmet>
         <title>{siteTitle}</title>
+        <meta http-equiv="content-language" content="ja" />
         <meta name="description" content={siteDescription} />
+        <meta name="og:image" content={siteImage} />
+        <meta name="og:title" content={siteTitle} />
+        <meta name="og:description" content={siteDescription} />
+        <meta name="og:url" content={siteUrl} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content={twitterUserName} />
+        <meta name="twitter:title" content={siteTitle} />
+        <meta name="twitter:description" content={siteDescription} />
+        <meta name="twitter:image" content={siteImage} />
       </Helmet>
 
       <div id="main">

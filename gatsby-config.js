@@ -1,21 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter - Strata by HTML5 UP`,
-    author: `Hunter Chang`,
-    description: `A Gatsby.js Starter based on Strata by HTML5 UP`,
+    title: `Mkit lab.`,
+    author: `Keita MOri`,
+    description: `Keita Mori / App Engineer, This is my portfolio.`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Mkit lab.`,
+        short_name: `Mkit lab.`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#33434f`,
+        theme_color: `#49bf5f`,
         display: `minimal-ui`,
-        icon: `src/assets/images/website-icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-transformer-sharp`,
@@ -34,7 +34,6 @@ module.exports = {
         path: `${__dirname}/src/data/`,
       }
     },
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-offline`,
+    `gatsby-plugin-sass`
   ],
 }
