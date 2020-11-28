@@ -11,7 +11,7 @@ const Header = () => (
       </a>
       <h1>
         <strong>Keita Mori</strong> / App Engineer
-        <small><i>This is my portfolio, <strong>mkit lab.</strong></i></small>
+        <small><i>This is my portfolio, <strong>Mkit lab.</strong></i></small>
       </h1>
     </div>
     <Footer />

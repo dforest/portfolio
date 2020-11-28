@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Mkit lab.`,
-    author: `Keita MOri`,
+    author: `Keita Mori`,
     description: `Keita Mori / App Engineer, This is my portfolio.`,
   },
   plugins: [
