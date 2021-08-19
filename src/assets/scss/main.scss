@@ -438,7 +438,7 @@
     position: relative;
 
     > .label {
-      display: none;
+      margin: 0 0 0 0.5em;
     }
   }
 
@@ -855,6 +855,15 @@
       font-size: 0.8em;
       line-height: 1.5em;
       margin: 0 0 (_size(element-margin) * 0.25) 0;
+
+      &.title {
+        color: _palette(fg-bold);
+        font-size: 1em;
+      }
+
+      &.description {
+        color: _palette(fg-bold);
+      }
     }
 
     a {
@@ -885,7 +894,25 @@
     line-height: 1.5em;
 
     li.tag {
+      color: _palette(fg-bold);
       margin: 0 0.5em 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    a{
+      color: inherit;
+    }
+  }
+
+  ul.links {
+    margin: (_size(element-margin) * 0.75) 0 0 0;
+    padding: 0;
+    font-size: 0.8em;
+    line-height: 1.5em;
+
+    li.link {
+      margin: (_size(element-margin) * 0.25) 0 0 0;
       padding: 0;
       list-style: none;
     }
@@ -1003,20 +1030,25 @@
     padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
     width: calc(100% - #{$size-header-width});
 
+    > h2 {
+      margin: $size-header-pad/2 0 $size-header-pad/4 0;
+      font-size: 2.5em;
+      font-weight: normal;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
     > section {
-      margin: $size-header-pad 0 0 0;
-      padding: 0 0 0 0.75em;
+      margin: 0 !important;
+      padding: 0 0 0 0.75em !important;
       border-left: solid 1px _palette(border);
 
       &:first-child {
         border-top: 0;
         margin-top: 0;
         padding-top: 0;
-      }
-
-      h2 {
-        font-size: 2.5em;
-        font-weight: normal;
       }
     }
   }

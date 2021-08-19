@@ -37,15 +37,15 @@ const HomeIndex = () => {
           </p>
 
         </section> */}
+        <h2>Works</h2>
         <section id="works">
-          {/* <h2>Recent Works</h2> */}
 
           <Gallery />
 
         </section>
 
+        <h2>Recent Posts</h2>
         <section id="posts">
-          {/* <h2>Recent Posts</h2> */}
 
           <Posts />
 

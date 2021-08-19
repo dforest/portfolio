@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import hostName from '../../Common'
 
 const GalleryItem = ({id, image, tags, date, caption, description, links}) => {
 
@@ -27,13 +28,13 @@ const GalleryItem = ({id, image, tags, date, caption, description, links}) => {
           })}
         </ul>)
       }
-      <p>{description}</p>
+      <p className="description">{description}</p>
       {
-        links && (<ul className="tags">
+        links && (<ul className="links">
           {links.map((link, i) => {
-            return (<li key={id+"link"+i} className="tag">
+            return (<li key={id+"link"+i} className="link">
               <a href={link} className="icon fa-external-link">
-                <span className="label">LINK{i+1}</span>
+                <span className="label">{hostName(link)}</span>
               </a>
             </li>)
           })}

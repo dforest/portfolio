@@ -1,5 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
+import hostName from './Common'
 
 const Posts = () => {
   const posts = useStaticQuery(graphql`
@@ -15,11 +16,6 @@ const Posts = () => {
   }
   `)
 
-  const hostName = (str) => {
-    const url = new URL(str)
-    return (url && url.hostname) || "blog"
-  }
-
   const faviconSrc = (hostname) => {
     return `http://www.google.com/s2/favicons?domain=${hostname}`
   }
@@ -34,7 +30,7 @@ const Posts = () => {
         </div>
         <div className="12u col">
           <a href={obj.link}>
-            <h3>{obj.title}</h3>
+            <p className="title">{obj.title}</p>
             <p className="site">
               <img src={faviconSrc(host)} />{host}
             </p>
