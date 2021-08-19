@@ -17,7 +17,7 @@ const Posts = () => {
   `)
 
   const faviconSrc = (hostname) => {
-    return `http://www.google.com/s2/favicons?domain=${hostname}`
+    return `https://www.google.com/s2/favicons?domain=${hostname}`
   }
 
   return (<div>
@@ -32,7 +32,7 @@ const Posts = () => {
           <a href={obj.link}>
             <p className="title">{obj.title}</p>
             <p className="site">
-              <img src={faviconSrc(host)} />{host}
+              <img src={faviconSrc(host)} alt={host} />{host}
             </p>
           </a>
         </div>

@@ -16,7 +16,7 @@ const GalleryItem = ({id, image, tags, date, caption, description, links}) => {
       <p>{formatDate(date)}</p>
     </div>
     <div className="6u image col">
-    <img src={image} />
+    <img src={image} alt={caption} />
     </div>
 
     <div className="6u col">
