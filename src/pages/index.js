@@ -18,7 +18,7 @@ const HomeIndex = () => {
         <title>{siteTitle}</title>
         <meta http-equiv="content-language" content="ja" />
         <meta name="description" content={siteDescription} />
-        <meta name="og:image" content={siteImage} />
+        <meta name="og:image" content={siteUrl + siteImage} />
         <meta name="og:title" content={siteTitle} />
         <meta name="og:description" content={siteDescription} />
         <meta name="og:url" content={siteUrl} />
@@ -26,7 +26,7 @@ const HomeIndex = () => {
         <meta name="twitter:creator" content={twitterUserName} />
         <meta name="twitter:title" content={siteTitle} />
         <meta name="twitter:description" content={siteDescription} />
-        <meta name="twitter:image" content={siteImage} />
+        <meta name="twitter:image" content={siteUrl + siteImage} />
       </Helmet>
 
       <div id="main">
