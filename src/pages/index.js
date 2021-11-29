@@ -44,7 +44,7 @@ const HomeIndex = () => {
 
         </section>
 
-        <h2>Recent Posts</h2>
+        <h2 id="posts-header">Recent Posts</h2>
         <section id="posts">
 
           <Posts />
