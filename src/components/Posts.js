@@ -8,7 +8,7 @@ const Posts = () => {
     allPostsJson {
       nodes {
         id
-        isoDate(fromNow: true)
+        isoDate(formatString: "YYYY.MM.DD")
         link
         title
       }

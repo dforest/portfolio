@@ -6,8 +6,8 @@ const GalleryItem = ({id, image, tags, date, caption, description, links}) => {
 
   const formatDate = (date) => {
     return `
-    ${(date.getMonth()+1).toString().padStart(2, '0')}
-    .${date.getFullYear()}
+    ${date.getFullYear()}
+    .${(date.getMonth()+1).toString().padStart(2, '0')}
     `.replace(/\n|\r|\s/g, '');
   }
 
