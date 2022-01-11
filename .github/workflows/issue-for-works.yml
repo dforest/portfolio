@@ -1,9 +1,8 @@
 name: Updating works remainder
 
 on:
-  # schedule:
-  #   - cron: '0 1 * */3 *'
-  workflow_dispatch
+  schedule:
+    - cron: '0 1 * */3 *'
 
 jobs:
   stuff:
