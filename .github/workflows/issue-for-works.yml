@@ -2,7 +2,7 @@ name: Updating works remainder
 
 on:
   schedule:
-    - cron: '0 1 * */3 *'
+    - cron: '0 1 1 2,6,10 *'
 
 jobs:
   stuff:
