@@ -1,11 +1,37 @@
 [
   {
+    "image": "../images/works/2021/jumpfesta.jpg",
+    "date": "2021/12/26",
+    "caption": "ジャンプフェスタ2022 ONLINE",
+    "description": "バックエンドサービスおよび運用ツールの設計、構築、運用を担当しました。©SHUEISHA Inc. All rights reserved.",
+    "tags": [
+      "Python", "GCP", "Firestore", "Cloud Functions", "Nuxt.js"
+    ],
+    "links": [
+      "https://prty.jp/work/jump-festa-2022-online",
+      "https://www.jumpfesta.com/"
+    ]
+  },
+  {
+    "image": "../images/works/2021/odaiba.png",
+    "date": "2021/8/1",
+    "caption": "THE ODAIBA 2021 バーチャル冒険アイランド",
+    "description": "バックエンドサービスの設計、構築を担当しました。",
+    "tags": [
+      "Python", "GCP", "Firestore", "Cloud Functions"
+    ],
+    "links": [
+      "https://prty.jp/work/fuji-tv-festival",
+      "https://www.fujitv.co.jp/odaiba2021/"
+    ]
+  },
+  {
     "image": "../images/works/2021/radwimps.jpg",
     "date": "2021/7/1",
     "caption": "RADWIMPS SHIN SEKAI",
     "description": "バックエンドサービス構築、UE4全体設計、UE4プラグイン開発、テクニカルディレクションを担当しました。",
     "tags": [
-      "UE4", "C++", "Python", "GCP", "Firestore"
+      "UE4", "C++", "Python", "GCP", "Firestore", "Cloud Functions"
     ],
     "links": [
       "https://prty.jp/work/varp-x-radwimps-2021",
@@ -19,7 +45,7 @@
     "caption": "非公開",
     "description": "仕様策定、API設計、KMM及びAndroidアプリ開発を担当しました。",
     "tags": [
-      "OpenAPI", "ReDoc", "Android", "Kotlin", "Kotlin Multiplatform Mobile"
+      "OpenAPI", "ReDoc", "Android", "Kotlin", "Kotlin Multiplatform Mobile", "Coroutine", "Dagger Hilt"
     ],
     "links": [
     ]
@@ -61,6 +87,17 @@
     "links": [
       "https://prty.jp/work/varp-x-kzm",
       "https://kzm.varp.jp/"
+    ]
+  },
+  {
+    "image": "../images/noimage.png",
+    "date": "2020/03/01",
+    "caption": "非公開",
+    "description": "機械学習用サーバ構築およびAPI開発、フロントエンド開発を担当しました。",
+    "tags": [
+      "GCP", "Python", "React"
+    ],
+    "links": [
     ]
   },
   {
