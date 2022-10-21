@@ -27,7 +27,7 @@ const Footer = () => (
       </ul>
       <ul className="copyright">
         <li>
-          © Keita Mori
+          © Keita MORI
         </li>
         <li>
           Design based on <a href="http://html5up.net">HTML5 UP</a>
