@@ -1,8 +1,8 @@
-name: Daily deployment for refreshing posts
+name: Refreshing posts
 
 on:
   schedule:
-    - cron: '0 20 * * *'
+    - cron: '0 20 */10 * *'
 
 jobs:
   deploy:
