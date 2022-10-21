@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Mkit lab.`,
-    author: `Keita Mori`,
-    description: `Keita Mori / App Engineer, This is my portfolio.`,
+    author: `Keita MORI`,
+    description: `Keita MORI / App Engineer, This is my portfolio.`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
