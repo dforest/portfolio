@@ -1,9 +1,15 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import { Link } from 'gatsby'
 
-import Gallery from '../components/Gallery'
-import Posts from '../components/Posts'
-import Layout from '../components/layout'
+import moment from 'moment'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
+import FeaturedWorks from '../components/featured_works'
+import Posts from  '../components/posts'
+import HeaderTitle from '../images/title.svg'
+
 
 const HomeIndex = () => {
   const siteTitle = 'Mkit lab.'
@@ -13,7 +19,7 @@ const HomeIndex = () => {
   const twitterUserName = '@d_forest'
 
   return (
-    <Layout>
+    <>
       <Helmet>
         <title>{siteTitle}</title>
         <meta http-equiv="content-language" content="ja" />
@@ -29,44 +35,52 @@ const HomeIndex = () => {
         <meta name="twitter:image" content={siteUrl + siteImage} />
       </Helmet>
 
-      <div id="main">
-        {/* <section id="bio">
-          <h2>Bio</h2>
-          <p>
-            大学卒業後、ワークスアプリケーションズ、株式会社奇兵隊の取締役CPOを経て、2019年にPARTYに参加。Androidアプリとバックエンドを中心に、幅広い技術を使って開発を行う。UX設計やグロースなど、サービスを一貫して設計・開発することを得意とする。
-          </p>
-
-        </section> */}
-        <h2>Works</h2>
-        <section id="works">
-
-          <Gallery />
-
-        </section>
-
-        <h2 id="posts-header">Recent Posts</h2>
-        <section id="posts">
-
-          <Posts />
-
-        </section>
-
-        {/* <section id="contacts">
-          <h2>Get In Touch</h2>
-          <p>
-            お仕事の依頼などありましたらご連絡ください。
-          </p>
-          <ul className="labeled-icons">
-            <li>
-              <h3 className="icon fa-envelope-o">
-                <span className="label">Email</span>
-              </h3>
-              info👻mkit.lab
-            </li>
+      <header className='navbar px-8'>
+        <div className='container mx-auto max-w-4xl'>
+          <ul className='flex items-center space-x-7'>
+            <li className='mr-4 md:mr-12'><img src={HeaderTitle} alt='Mkit lab.' className='w-[125px]' /></li>
+            <li><Link to='/about'>About</Link></li>
+            <li><Link to='/works'>Works</Link></li>
+            <li><Link to='/posts'>Posts</Link></li>
           </ul>
-        </section> */}
+        </div>
+      </header>
+
+      <div className='mx-8'>
+        <div className='container mx-auto max-w-4xl pt-16'>
+          <h1><img src={HeaderTitle} alt='Mkit lab.' className='w-[237px]'/></h1>
+
+          <p className='mt-8'><span className='font-bold text-white-700'>Keita MORI</span> - Technical Director, Technical Project Manager, Software Engineer and Indie Game Developer.</p>
+          <p className='mt-4'><Link to='/about'>{'About ME ->'}</Link></p>
+
+          <section className='mt-[5.75rem]'>
+            <h2 className='mb-4'>Works</h2>
+            <FeaturedWorks />
+            <p className='mt-3 md:mt-6'><Link to='/works'>{'See MORE ->'}</Link></p>
+          </section>
+          <section className='mt-[5.75rem]'>
+            <h2 className='mb-4'>Posts</h2>
+            <Posts limit={3}/>
+            <p><Link to='/posts'>{'See MORE ->'}</Link></p>
+          </section>
+
+          <footer className='mt-56 pt-6 pb-16'>
+            <p className='space-x-8 mb-8'>
+              <a href="https://twitter.com/d_forest" target='_blank' rel='noopener norefferer' className='text-4xl'>
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
+              <a href="https://github.com/dforest" target='_blank' rel='noopener norefferer' className='text-4xl'>
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a href="https://www.linkedin.com/in/keitamori/" target='_blank' rel='noopener norefferer' className='text-4xl'>
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+            </p>
+            <p className='text-sm'>© {moment().year()} Keita MORI</p>
+          </footer>
+        </div>
       </div>
-    </Layout>
+    </>
   )
 }
 

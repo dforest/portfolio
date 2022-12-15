@@ -12,10 +12,10 @@ module.exports = {
         name: `Mkit lab.`,
         short_name: `Mkit lab.`,
         start_url: `/`,
-        background_color: `#33434f`,
-        theme_color: `#49bf5f`,
+        background_color: `#27343E`,
+        theme_color: `#3EB54D`,
         display: `minimal-ui`,
-        icon: `src/assets/images/icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-transformer-sharp`,
