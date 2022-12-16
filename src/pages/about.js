@@ -4,11 +4,11 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 
 
-const HomeIndex = ({location}) => {
+const About = ({location}) => {
   return (
     <Layout
       location={location}
-      title='About ME'
+      title='About ME.'
     >
       <h1 className='mt-16 text-6xl font-semibold'>
         Keita MORI.
@@ -49,4 +49,4 @@ const HomeIndex = ({location}) => {
   )
 }
 
-export default HomeIndex
+export default About
