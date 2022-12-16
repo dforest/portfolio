@@ -54,14 +54,14 @@ const Posts = ({limit}) => {
       const year = moment(group[0].isoDate).format('Y')
       return (
         <section key={year} className='flex'>
-          <header>
+          <header className='basis-15 md:basis-16'>
             <p className='axis-year text-xl md:text-2xl'>{year}</p>
           </header>
           <div className='flex-1'>
             {group.map(post => {
               const host = hostname(post.link)
               return (
-                <div key={post.id} className="ml-4 pl-5 pb-16 axis-item">
+                <div key={post.id} className="ml-4 pl-5 pb-16 axis-item post">
                   <div className='axis-point'></div>
                   <div className='font-medium text-sm md:text-base'>{moment(post.isoDate).format('M.D')}</div>
                   <a href={post.link} className='axis-card px-6 py-8 mt-2 rounded-md block' target='_blank' rel='noopener noreferrer'>

@@ -67,6 +67,10 @@
 
         &.active {
           color: var(--color-green);
+
+          a:hover {
+            color: var(--color-green);
+          }
         }
       }
 
@@ -79,10 +83,6 @@
   .axis-container {
     section:not(:first-child) {
       margin-top: 1.5rem;
-    }
-
-    .axis-item:last-child {
-      border-color: var(--color-background);
     }
   }
 
@@ -98,7 +98,7 @@
     position: relative;
     border-left: 2px solid rgba(255, 255, 255, .2);
 
-    &::after {
+    &.post::after {
       content: " ";
       position: absolute;
       left: -0.15rem;

@@ -28,7 +28,7 @@ const HomeIndex = ({location}) => {
       <section className='mt-[5.75rem]'>
         <h2 className='mb-4'>Posts</h2>
         <Posts limit={3}/>
-        <p><Link to='/posts'>{'See MORE ->'}</Link></p>
+        <p className='mt-3 md:mt-6'><Link to='/posts'>{'See MORE ->'}</Link></p>
       </section>
     </Layout>
   )

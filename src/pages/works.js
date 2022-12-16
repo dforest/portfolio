@@ -61,17 +61,15 @@ const Works = ({location}) => {
           const year = moment(group[0].date).format('Y')
           return (
             <section key={year} className='flex'>
-              <header>
+              <header className='basis-15 md:basis-16'>
                 <p className='axis-year text-xl md:text-2xl'>{year}</p>
               </header>
               <div className='flex-1'>
                 {group.map(work => {
                   return (
                     <div key={work.id} className="ml-4 pl-5 pb-16 axis-item">
-                      <div className='axis-point'></div>
-                      <div className='font-medium text-sm md:text-base'>{moment(work.date).format('MMM.')}</div>
                       <Link to={'/works/' + work.slug}>
-                        <img src={work.heroimage.childImageSharp.gatsbyImageData.images.fallback.src} alt={work.caption} className='rounded-md mt-2'/>
+                        <img src={work.heroimage.childImageSharp.gatsbyImageData.images.fallback.src} alt={work.caption} className='rounded-md'/>
                       </Link>
                       <p className='mt-4'>{work.role}</p>
                       <ul className='flex space-x-2 text-sm mt-2'>
