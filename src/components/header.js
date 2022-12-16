@@ -5,7 +5,7 @@ import TitleSvg from '../images/title.svg'
 import TitleDeactiveSvg from '../images/title_deactive.svg'
 
 const Header = ({location, displayPos}) => {
-  const HeaderTitle = location.pathname === '/' ? TitleSvg : TitleDeactiveSvg
+  const HeaderTitle = location && location.pathname === '/' ? TitleSvg : TitleDeactiveSvg
   const defaultStyle = displayPos ? {visibility: 'hidden'} : {visibility: 'visible'}
   const [style, setStyle] = useState(defaultStyle)
 
