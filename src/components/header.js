@@ -32,20 +32,24 @@ const Header = ({location, displayPos}) => {
     <header className='navbar px-8' style={style}>
       <div className='container mx-auto max-w-4xl'>
         <ul className='flex items-center space-x-7'>
-          <li className='mr-4 md:mr-12'><img src={HeaderTitle} alt='Mkit lab.' className='w-[125px]' /></li>
-          <li className={ location.pathname === '/abont' ? 'active' : ''}>
+          <li className='mr-4 md:mr-12'>
+            <Link to='/'>
+              <img src={HeaderTitle} alt='Mkit lab.' className='w-[125px]' />
+            </Link>
+          </li>
+          <li className={ location.pathname === '/about/' ? 'active' : ''}>
             <Link to='/about'>
-              { location.pathname === '/about' ? 'About.' : 'About' }
+              { location.pathname === '/about/' ? 'About.' : 'About' }
             </Link>
           </li>
-          <li className={ location.pathname === '/works' ? 'active' : ''}>
+          <li className={ location.pathname === '/works/' ? 'active' : ''}>
             <Link to='/works'>
-              { location.pathname === '/works' ? 'Works.' : 'Works' }
+              { location.pathname === '/works/' ? 'Works.' : 'Works' }
             </Link>
           </li>
-          <li className={ location.pathname === '/posts' ? 'active' : ''}>
+          <li className={ location.pathname === '/posts/' ? 'active' : ''}>
             <Link to='/posts'>
-              { location.pathname === '/posts' ? 'Posts.' : 'Posts' }
+              { location.pathname === '/posts/' ? 'Posts.' : 'Posts' }
             </Link>
           </li>
         </ul>

@@ -25,6 +25,10 @@
     font-family: "Gill Sans", Lato, var(--default-font-family);
     font-style: italic;
     color: var(--color-green);
+
+    &.sub {
+      color: var(--color-text);
+    }
   }
 
   h2 {

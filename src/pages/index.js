@@ -29,7 +29,7 @@ const HomeIndex = ({location}) => {
         <h2 className='mb-4'>Posts</h2>
         <Posts limit={3}/>
         <p><Link to='/posts'>{'See MORE ->'}</Link></p>
-          </section>
+      </section>
     </Layout>
   )
 }

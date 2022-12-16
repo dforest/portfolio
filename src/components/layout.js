@@ -9,7 +9,7 @@ import { faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-ic
 import Header from '../components/Header'
 
 const Layout = ({ children, location, title, headerDisplayPos }) => {
-  const siteTitle = title ? title + '- Mkit lab.' : 'Mkit lab.'
+  const siteTitle = title ? title + ' - Mkit lab.' : 'Mkit lab.'
   const siteDescription = 'Keita Mori - Technical Director, Technical Project Manager, Software Engineer and Indie Game Developer.'
   const siteUrl =  'https://mkitlab.com'
   const siteImage =  '/images/og_image.png'
