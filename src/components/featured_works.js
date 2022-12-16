@@ -14,9 +14,7 @@ const FeaturedWorks = () => {
         slug
         heroimage {
           childImageSharp {
-            fluid {
-              src
-            }
+            gatsbyImageData(layout: FIXED)
           }
         }
       }
@@ -30,7 +28,7 @@ const FeaturedWorks = () => {
         return (<Link to={'/works/' + item.slug} key={item.id}>
           <img
             className="w-full aspect-video rounded-md"
-            src={item.heroimage && item.heroimage.childImageSharp.fluid.src}
+            src={item.heroimage && item.heroimage.childImageSharp.gatsbyImageData.images.fallback.src}
             alt={item.caption}
           />
         </Link>)
