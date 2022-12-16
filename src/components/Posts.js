@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 import moment from 'moment'
 
@@ -64,10 +64,10 @@ const Posts = ({limit}) => {
                 <div key={post.id} className="ml-4 pl-5 pb-16 axis-item">
                   <div className='axis-point'></div>
                   <div className='font-medium text-sm md:text-base'>{moment(post.isoDate).format('M.D')}</div>
-                  <Link to={post.link} className='axis-card px-6 py-8 mt-2 rounded-md block' target='_blank' rel='noopener norefferer'>
+                  <a href={post.link} className='axis-card px-6 py-8 mt-2 rounded-md block' target='_blank' rel='noopener noreferrer'>
                     <div className='axis-title text-base md:text-lg font-semibold mb-2'>{post.title}</div>
                     <img src={faviconSrc(host)} alt="" className='inline mr-2'/><span className='font-normal text-sm'>{host}</span>
-                  </Link>
+                  </a>
                 </div>
               )
             })}
