@@ -29,6 +29,14 @@
     &.sub {
       color: var(--color-text);
     }
+
+    &.works {
+      color: var(--color-text-700);
+      font-size: 3rem;
+      line-height: 1;
+      font-style: normal;
+      font-family: Inter, var(--default-font-family);
+    }
   }
 
   h2 {
@@ -38,6 +46,12 @@
 
   a {
     font-weight: 500;
+
+    &.sub {
+      font-weight: 400;
+      text-decoration: underline;
+    }
+
     &:hover {
       color: var(--color-text-700);
     }
