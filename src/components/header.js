@@ -37,19 +37,19 @@ const Header = ({location, displayPos}) => {
               <img src={HeaderTitle} alt='Mkit lab.' className='w-[125px]' />
             </Link>
           </li>
-          <li className={ location.pathname === '/about/' ? 'active' : ''}>
+          <li className={ location.pathname.startsWith('/about/') ? 'active' : ''}>
             <Link to='/about'>
-              { location.pathname === '/about/' ? 'About.' : 'About' }
+              { location.pathname.startsWith('/about/') ? 'About.' : 'About' }
             </Link>
           </li>
-          <li className={ location.pathname === '/works/' ? 'active' : ''}>
+          <li className={ location.pathname.startsWith('/works/') ? 'active' : ''}>
             <Link to='/works'>
-              { location.pathname === '/works/' ? 'Works.' : 'Works' }
+              { location.pathname.startsWith('/works/') ? 'Works.' : 'Works' }
             </Link>
           </li>
-          <li className={ location.pathname === '/posts/' ? 'active' : ''}>
+          <li className={ location.pathname.startsWith('/posts/') ? 'active' : ''}>
             <Link to='/posts'>
-              { location.pathname === '/posts/' ? 'Posts.' : 'Posts' }
+              { location.pathname.startsWith('/posts/') ? 'Posts.' : 'Posts' }
             </Link>
           </li>
         </ul>

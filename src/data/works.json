@@ -6,7 +6,7 @@
     "caption": "バーチャル冒険アイランド 2022",
     "description": "バックエンドサービスの設計、実装とUE5連携の実装を担当しました。",
     "slug": "odaiba-2022",
-    "featured": true,
+    "featured": false,
     "role": "Backend Engineer",
     "tags": [
       "UE5", "C++", "Python", "AWS"
@@ -16,6 +16,7 @@
       "https://www.fujitv.co.jp/odaiba2022/"
     ],
     "images": [
+      "../images/works/2022/odaiba.png"
     ]
   },
   {
@@ -83,7 +84,7 @@
     "caption": "みんなのビジネス実践力 powered by 日経電子版",
     "description": "サービスの仕様策定、API設計、テクニカルディレクションを担当しました。",
     "slug": "nikkei-2020",
-    "featured": false,
+    "featured": true,
     "role": "Technical Director",
     "tags": [
       "OpenAPI", "ReDoc"
