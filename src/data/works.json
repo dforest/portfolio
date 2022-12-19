@@ -28,7 +28,7 @@
     "caption": "ジャンプフェスタ2022 ONLINE",
     "description": "バックエンドサービスおよび運用ツールの設計、構築、運用を担当。©SHUEISHA Inc. All rights reserved.",
     "slug": "jumpfesta-2021",
-    "featured": true,
+    "featured": false,
     "role": "Backend Engineer",
     "tags": [
       "Python", "GCP", "Firestore", "Cloud Functions", "Nuxt.js"
@@ -51,7 +51,7 @@
     "caption": "THE ODAIBA 2021 バーチャル冒険アイランド",
     "description": "バックエンドサービスの設計、構築を担当。",
     "slug": "odaiba-2021",
-    "featured": false,
+    "featured": true,
     "role": "Backend Engineer",
     "tags": [
       "Python", "GCP", "Firestore", "Cloud Functions"
