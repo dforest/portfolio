@@ -31,8 +31,8 @@ const Header = ({location, displayPos}) => {
   return (
     <header className='navbar px-8' style={style}>
       <div className='container mx-auto max-w-4xl'>
-        <ul className='flex items-center space-x-7'>
-          <li className='mr-4 md:mr-12'>
+        <ul className='flex items-center space-x-4 md:space-x-7'>
+          <li className='mr-4 md:mr-12 min-w-[125px]'>
             <Link to='/'>
               <img src={HeaderTitle} alt='Mkit lab.' className='w-[125px]' />
             </Link>
