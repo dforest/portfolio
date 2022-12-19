@@ -1,10 +1,10 @@
 [
   {
-    "heroimage": "../images/works/2022/odaiba.png",
+    "heroimage": "../images/works/2022/odaiba.jpg",
     "date": "2022/8/1",
     "company": "PARTY",
     "caption": "バーチャル冒険アイランド 2022",
-    "description": "バックエンドサービスの設計、実装とUE5連携の実装を担当しました。",
+    "description": "バックエンドサービスの設計、実装とUE5連携の実装を担当。",
     "slug": "odaiba-2022",
     "featured": false,
     "role": "Backend Engineer",
@@ -16,7 +16,9 @@
       "https://www.fujitv.co.jp/odaiba2022/"
     ],
     "images": [
-      "../images/works/2022/odaiba.png"
+      "../images/works/2022/odaiba-1.jpg",
+      "../images/works/2022/odaiba-2.jpg",
+      "../images/works/2022/odaiba-3.jpg"
     ]
   },
   {
@@ -24,7 +26,7 @@
     "date": "2021/12/26",
     "company": "PARTY",
     "caption": "ジャンプフェスタ2022 ONLINE",
-    "description": "バックエンドサービスおよび運用ツールの設計、構築、運用を担当しました。©SHUEISHA Inc. All rights reserved.",
+    "description": "バックエンドサービスおよび運用ツールの設計、構築、運用を担当。©SHUEISHA Inc. All rights reserved.",
     "slug": "jumpfesta-2021",
     "featured": true,
     "role": "Backend Engineer",
@@ -36,6 +38,10 @@
       "https://www.jumpfesta.com/"
     ],
     "images": [
+      "../images/works/2021/jumpfesta-1.jpg",
+      "../images/works/2021/jumpfesta-2.jpg",
+      "../images/works/2021/jumpfesta-3.jpg",
+      "../images/works/2021/jumpfesta-4.jpg"
     ]
   },
   {
@@ -43,7 +49,7 @@
     "date": "2021/8/1",
     "company": "PARTY",
     "caption": "THE ODAIBA 2021 バーチャル冒険アイランド",
-    "description": "バックエンドサービスの設計、構築を担当しました。",
+    "description": "バックエンドサービスの設計、構築を担当。",
     "slug": "odaiba-2021",
     "featured": false,
     "role": "Backend Engineer",
@@ -55,6 +61,12 @@
       "https://www.fujitv.co.jp/odaiba2021/"
     ],
     "images": [
+      "../images/works/2021/odaiba-1.png",
+      "../images/works/2021/odaiba-2.png",
+      "../images/works/2021/odaiba-3.png",
+      "../images/works/2021/odaiba-4.png",
+      "../images/works/2021/odaiba-5.png",
+      "../images/works/2021/odaiba-6.png"
     ]
   },
   {
@@ -62,7 +74,7 @@
     "date": "2021/7/1",
     "company": "PARTY",
     "caption": "RADWIMPS SHIN SEKAI",
-    "description": "バックエンドサービス構築、UE4全体設計、UE4プラグイン開発、テクニカルディレクションを担当しました。",
+    "description": "バックエンドサービス構築、UE4全体設計、UE4プラグイン開発、テクニカルディレクションを担当。",
     "slug": "radwimps-2021",
     "featured": true,
     "role": "Technical Director / Software Engineer",
@@ -75,6 +87,15 @@
       "https://rad.varp.jp/"
     ],
     "images": [
+      "../images/works/2021/radwimps-1.jpg",
+      "../images/works/2021/radwimps-2.jpg",
+      "../images/works/2021/radwimps-3.jpg",
+      "../images/works/2021/radwimps-4.jpg",
+      "../images/works/2021/radwimps-5.jpg",
+      "../images/works/2021/radwimps-6.jpg",
+      "../images/works/2021/radwimps-7.jpg",
+      "../images/works/2021/radwimps-8.jpg",
+      "../images/works/2021/radwimps-9.jpg"
     ]
   },
   {
@@ -82,7 +103,7 @@
     "date": "2020/10/30",
     "company": "PARTY",
     "caption": "みんなのビジネス実践力 powered by 日経電子版",
-    "description": "サービスの仕様策定、API設計、テクニカルディレクションを担当しました。",
+    "description": "サービスの仕様策定、API設計、テクニカルディレクションを担当。",
     "slug": "nikkei-2020",
     "featured": true,
     "role": "Technical Director",
@@ -90,10 +111,10 @@
       "OpenAPI", "ReDoc"
     ],
     "links": [
-      "https://prty.jp/work/min-biz",
-      "https://minbiz.nikkei.com/"
+      "https://prty.jp/work/min-biz"
     ],
     "images": [
+      "../images/works/2020/nikkei-1.jpg"
     ]
   },
   {
@@ -101,7 +122,7 @@
     "date": "2020/10/30",
     "company": "PARTY",
     "caption": "Stadium App™",
-    "description": "Unity as a Libraryを利用したUnityの設計、開発を担当しました。",
+    "description": "Unity as a Libraryを利用したUnityの設計、開発を担当。",
     "slug": "stadium-app-2020",
     "featured": false,
     "role": "Unity Engineer",
@@ -113,6 +134,8 @@
       "https://stadium-experiment.com/"
     ],
     "images": [
+      "../images/works/2020/stadium-app-1.jpg",
+      "../images/works/2020/stadium-app-2.jpg"
     ]
   },
   {
@@ -120,7 +143,7 @@
     "date": "2020/08/02",
     "company": "PARTY",
     "caption": "VARP x kZm “VIRTUAL DISTORTION”",
-    "description": "バーチャルライブのバックエンドサービスの構築と、UE4用バックエンド接続プラグインの開発を担当しました。",
+    "description": "バーチャルライブのバックエンドサービスの構築、UE4用バックエンド連携プラグインの開発を担当。",
     "slug": "virtual-distortion-2020",
     "featured": false,
     "role": "Backend Engineer",
@@ -132,6 +155,10 @@
       "https://kzm.varp.jp/"
     ],
     "images": [
+      "../images/works/2020/virtual-distortion-1.png",
+      "../images/works/2020/virtual-distortion-2.png",
+      "../images/works/2020/virtual-distortion-3.png",
+      "../images/works/2020/virtual-distortion-4.png"
     ]
   },
   {
@@ -139,7 +166,7 @@
     "date": "2019/11/19",
     "company": "PARTY",
     "caption": "PARTY x noiz architects EXPO 2025 OSAKA",
-    "description": "Kinect v2によるヘッドトラッキングアプリの開発を担当しました。",
+    "description": "Kinect v2によるセンサリング開発を担当。",
     "slug": "expo2025-osaka-2019",
     "featured": true,
     "role": "Sensor Programmer",
@@ -150,6 +177,12 @@
       "https://prty.jp/work/expo-2025-osaka"
     ],
     "images": [
+      "../images/works/2019/expo2025-osaka-1.png",
+      "../images/works/2019/expo2025-osaka-2.png",
+      "../images/works/2019/expo2025-osaka-3.png",
+      "../images/works/2019/expo2025-osaka-4.png",
+      "../images/works/2019/expo2025-osaka-5.png",
+      "../images/works/2019/expo2025-osaka-6.png"
     ]
   },
   {
@@ -157,7 +190,7 @@
     "date": "2019/07/26",
     "company": "PARTY",
     "caption": "FUJI ROCK `19 EXPerience by SoftBank 5G",
-    "description": "バーチャルライブのバックエンドサービスの構築と、UE4用バックエンド接続プラグイン、管理用ウェブツールの開発・運用を担当しました。",
+    "description": "バーチャルライブのバックエンドサービスの構築、UE4用バックエンド接続プラグイン、管理用ウェブツールの開発・運用を担当。",
     "slug": "fujirock19-exp-2019",
     "featured": false,
     "role": "Backend Engineer",
@@ -168,6 +201,9 @@
       "https://prty.jp/work/fuji-rock-19-experience"
     ],
     "images": [
+      "../images/works/2019/fujirock19-exp-1.png",
+      "../images/works/2019/fujirock19-exp-2.png",
+      "../images/works/2019/fujirock19-exp-3.png"
     ]
   },
   {
@@ -175,7 +211,7 @@
     "date": "2019/07/26",
     "company": "PARTY",
     "caption": "FUJI ROCK `19 by SoftBank 5G",
-    "description": "Androidアプリの設計・開発を担当しました。",
+    "description": "Androidアプリの設計・開発を担当。",
     "slug": "fujirock19-app-2019",
     "featured": false,
     "role": "Android Engineer",
@@ -186,6 +222,9 @@
       "https://prty.jp/work/fuji-rock-19-by-softbank-5g"
     ],
     "images": [
+      "../images/works/2019/fujirock19-app-1.jpg",
+      "../images/works/2019/fujirock19-app-2.jpg",
+      "../images/works/2019/fujirock19-app-3.jpg"
     ]
   }
 ]
