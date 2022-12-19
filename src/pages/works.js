@@ -71,8 +71,8 @@ const Works = ({location}) => {
                         <img src={work.heroimage.childImageSharp.gatsbyImageData.images.fallback.src} alt={work.caption} className='rounded-md'/>
                       </Link>
                       <p className='mt-4'>{work.role}</p>
-                      <ul className='flex space-x-2 text-sm mt-2'>
-                        {work.tags.map(tag => (<li>{'#' + tag}</li>))}
+                      <ul className='flex flex-wrap text-sm mt-2'>
+                        {work.tags.map(tag => (<li key={work.id + tag} className='mr-2'>{'#' + tag}</li>))}
                       </ul>
                       <p className='mt-4'>
                         <Link to={'/works/' + work.slug}>{'See MORE->'}</Link>

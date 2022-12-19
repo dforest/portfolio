@@ -30,6 +30,7 @@ const Layout = ({ children, location, title, headerDisplayPos }) => {
         <meta name="twitter:title" content={siteTitle} />
         <meta name="twitter:description" content={siteDescription} />
         <meta name="twitter:image" content={siteUrl + siteImage} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       </Helmet>
 
       <Header location={location} displayPos={headerDisplayPos}/>

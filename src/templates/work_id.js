@@ -18,8 +18,8 @@ const About = ({location, pageContext}) => {
       </h1>
 
       <p className='mt-14 text-2xl font-medium'>{work.role}</p>
-      <ul className='flex space-x-2 mt-2'>
-        {work.tags.map(tag => (<li>{'#' + tag}</li>))}
+      <ul className='flex flex-wrap mt-2'>
+        {work.tags.map(tag => (<li key={tag} className='mr-2'>{'#' + tag}</li>))}
       </ul>
 
       <p className='mt-14'>{work.description}</p>
