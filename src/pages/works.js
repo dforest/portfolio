@@ -15,7 +15,6 @@ const Works = ({location}) => {
 
     works.allWorksJson.nodes.forEach(work => {
       const time = moment(work.date)
-      console.log(time.year())
       if(year !== time.year()) {
         group = []
         groups.push(group)

@@ -1,7 +1,7 @@
 [
   {
     "heroimage": "../images/works/2022/odaiba.jpg",
-    "date": "2022/8/1",
+    "date": "2022-08-01",
     "company": "PARTY",
     "caption": "バーチャル冒険アイランド 2022",
     "description": "バックエンドサービスの設計、実装とUE5連携の実装を担当。",
@@ -23,7 +23,7 @@
   },
   {
     "heroimage": "../images/works/2021/jumpfesta.jpg",
-    "date": "2021/12/26",
+    "date": "2021-12-26",
     "company": "PARTY",
     "caption": "ジャンプフェスタ2022 ONLINE",
     "description": "バックエンドサービスおよび運用ツールの設計、構築、運用を担当。©SHUEISHA Inc. All rights reserved.",
@@ -46,7 +46,7 @@
   },
   {
     "heroimage": "../images/works/2021/odaiba.png",
-    "date": "2021/8/1",
+    "date": "2021-08-01",
     "company": "PARTY",
     "caption": "THE ODAIBA 2021 バーチャル冒険アイランド",
     "description": "バックエンドサービスの設計、構築を担当。",
@@ -71,7 +71,7 @@
   },
   {
     "heroimage": "../images/works/2021/radwimps.jpg",
-    "date": "2021/7/1",
+    "date": "2021-07-01",
     "company": "PARTY",
     "caption": "RADWIMPS SHIN SEKAI",
     "description": "バックエンドサービス構築、UE4全体設計、UE4プラグイン開発、テクニカルディレクションを担当。",
@@ -100,7 +100,7 @@
   },
   {
     "heroimage": "../images/works/2020/nikkei.jpg",
-    "date": "2020/10/30",
+    "date": "2020-10-30",
     "company": "PARTY",
     "caption": "みんなのビジネス実践力 powered by 日経電子版",
     "description": "サービスの仕様策定、API設計、テクニカルディレクションを担当。",
@@ -119,7 +119,7 @@
   },
   {
     "heroimage": "../images/works/2020/stadium-app.jpg",
-    "date": "2020/10/30",
+    "date": "2020-10-30",
     "company": "PARTY",
     "caption": "Stadium App™",
     "description": "Unity as a Libraryを利用したUnityの設計、開発を担当。",
@@ -140,7 +140,7 @@
   },
   {
     "heroimage": "../images/works/2020/virtual-distortion.png",
-    "date": "2020/08/02",
+    "date": "2020-08-02",
     "company": "PARTY",
     "caption": "VARP x kZm “VIRTUAL DISTORTION”",
     "description": "バーチャルライブのバックエンドサービスの構築、UE4用バックエンド連携プラグインの開発を担当。",
@@ -163,7 +163,7 @@
   },
   {
     "heroimage": "../images/works/2019/expo2025-osaka.png",
-    "date": "2019/11/19",
+    "date": "2019-11-19",
     "company": "PARTY",
     "caption": "PARTY x noiz architects EXPO 2025 OSAKA",
     "description": "Kinect v2によるセンサリング開発を担当。",
@@ -187,7 +187,7 @@
   },
   {
     "heroimage": "../images/works/2019/fujirock19-exp.png",
-    "date": "2019/07/26",
+    "date": "2019-07-26",
     "company": "PARTY",
     "caption": "FUJI ROCK `19 EXPerience by SoftBank 5G",
     "description": "バーチャルライブのバックエンドサービスの構築、UE4用バックエンド接続プラグイン、管理用ウェブツールの開発・運用を担当。",
@@ -208,7 +208,7 @@
   },
   {
     "heroimage": "../images/works/2019/fujirock19-app.png",
-    "date": "2019/07/26",
+    "date": "2019-07-26",
     "company": "PARTY",
     "caption": "FUJI ROCK `19 by SoftBank 5G",
     "description": "Androidアプリの設計・開発を担当。",
