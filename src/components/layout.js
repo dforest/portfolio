@@ -6,7 +6,7 @@ import moment from 'moment'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-import Header from '../components/Header'
+import Header from './header'
 
 const Layout = ({ children, location, title, headerDisplayPos }) => {
   const siteTitle = title ? title + ' - Mkit lab.' : 'Mkit lab.'
