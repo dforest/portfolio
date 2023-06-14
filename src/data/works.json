@@ -1,5 +1,26 @@
 [
   {
+    "heroimage": "../images/works/2023/tsubasa.jpg",
+    "date": "2023-03-02",
+    "company": "PARTY",
+    "caption": "CAPTAIN TSUBASA - THE BALL IS OUR FRIEND",
+    "description": "サイト全体の設計およびテクニカルディレクションを担当。©YOICHI TAKAHASHI/SHUEISHA",
+    "slug": "tsubasa-2023",
+    "featured": true,
+    "role": "Technical Director",
+    "tags": [
+      "Web3", "Next.js"
+    ],
+    "links": [
+      "https://tsubasa.world/"
+    ],
+    "images": [
+      "../images/works/2023/tsubasa-1.jpg",
+      "../images/works/2023/tsubasa-2.jpg",
+      "../images/works/2023/tsubasa-3.jpg"
+    ]
+  },
+  {
     "heroimage": "../images/works/2022/odaiba.jpg",
     "date": "2022-08-01",
     "company": "PARTY",
@@ -105,7 +126,7 @@
     "caption": "みんなのビジネス実践力 powered by 日経電子版",
     "description": "サービスの仕様策定、API設計、テクニカルディレクションを担当。",
     "slug": "nikkei-2020",
-    "featured": true,
+    "featured": false,
     "role": "Technical Director",
     "tags": [
       "OpenAPI", "ReDoc"
