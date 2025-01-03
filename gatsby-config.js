@@ -34,7 +34,6 @@ module.exports = {
         path: `${__dirname}/src/data/`,
       }
     },
-    `gatsby-plugin-sass`,
     `gatsby-plugin-postcss`
   ],
 }

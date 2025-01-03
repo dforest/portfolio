@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import '../assets/scss/main.scss'
+import '../styles/globals.css'
 
 import moment from 'moment'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
