@@ -9,7 +9,7 @@ import HeaderTitle from '../images/title.svg'
 
 
 const HomeIndex = ({data, location}) => {
-  const posts = data.allNotion
+  const posts = data.allNotion.nodes
 
   return (
     <Layout
@@ -45,6 +45,7 @@ const HomeIndex = ({data, location}) => {
 export const query = graphql`
   query {
     allNotion(
+      filter: {properties: {Published: {value: {eq: true}}}}
       sort: {properties: {Date: {value: {start: DESC}}}}
       limit: 6
     ) {
