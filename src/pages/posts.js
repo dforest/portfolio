@@ -9,10 +9,10 @@ const Works = ({location}) => {
   return (
     <Layout
       location={location}
-      title='Posts.'
+      title='Other Posts.'
     >
       <h1 className='mt-16 text-6xl font-semibold'>
-        Posts.
+        Other Posts.
       </h1>
 
       <div className='mt-5'>

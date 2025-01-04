@@ -1,13 +1,16 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import FeaturedWorks from '../components/featured_works'
+import BlogPosts from '../components/blog_posts'
 import Posts from  '../components/posts'
 import HeaderTitle from '../images/title.svg'
 
 
-const HomeIndex = ({location}) => {
+const HomeIndex = ({data, location}) => {
+  const posts = data.allNotion
+
   return (
     <Layout
       location={location}
@@ -26,12 +29,60 @@ const HomeIndex = ({location}) => {
         <p className='mt-3 md:mt-6'><Link to='/works'>{'See MORE ->'}</Link></p>
       </section>
       <section className='mt-[5.75rem]'>
-        <h2 className='mb-4'>Posts</h2>
+        <h2 className='mb-4'>Blog</h2>
+        <BlogPosts posts={posts} />
+        <p className='mt-3 md:mt-6'><Link to='/blog'>{'See MORE ->'}</Link></p>
+      </section>
+      <section className='mt-[5.75rem]'>
+        <h2 className='mb-4'>Other Posts</h2>
         <Posts limit={5}/>
         <p className='mt-3 md:mt-6'><Link to='/posts'>{'See MORE ->'}</Link></p>
       </section>
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    allNotion(
+      sort: {properties: {Date: {value: {start: DESC}}}}
+      limit: 6
+    ) {
+      nodes {
+        id
+        title
+        raw {
+          cover {
+            type
+            external {
+              url
+            }
+            file {
+              url
+            }
+          }
+        }
+        properties {
+          Slug {
+            value
+          }
+          Category {
+            value {
+              name
+            }
+          }
+          Date {
+            value {
+              start(formatString: "YYYY.MM.DD")
+            }
+          }
+          Published {
+            value
+          }
+        }
+      }
+    }
+  }
+`
 
 export default HomeIndex

@@ -1,3 +1,6 @@
+require("dotenv").config()
+
+console.log(process.env.NOTION_API_TOKEN)
 module.exports = {
   siteMetadata: {
     title: `Mkit lab.`,
@@ -34,6 +37,15 @@ module.exports = {
         path: `${__dirname}/src/data/`,
       }
     },
-    `gatsby-plugin-postcss`
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-source-notion-api`,
+      options: {
+        token: process.env.NOTION_TOKEN,
+        databaseId: process.env.NOTION_DATABASE_ID,
+        propsToFrontmatter: true,
+        lowerTitleLevel: true,
+      },
+    },
   ],
 }
