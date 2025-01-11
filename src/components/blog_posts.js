@@ -17,7 +17,7 @@ const BlogPosts = ({posts}) => {
           <div className='px-3 py-4'>
             <p className='inline-block text-base truncate w-full'>{item.title}</p>
             <p className='mt-1 text-xs'>
-              <span className='inline-block px-2 py-1 rounded-lg text-xs mr-2 blog-card'>
+              <span className='inline-block px-2 py-1 rounded-lg text-xs mr-2 border border-white/10 blog-card'>
                 {item.properties.Category.value.name}
               </span>
               {item.properties.Date.value.start}

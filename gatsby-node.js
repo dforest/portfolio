@@ -82,4 +82,43 @@ exports.createPages = async ({ graphql, actions }) => {
       })
     })
   })
+
+  await graphql(`
+    {
+      allMarkdownRemark(
+        filter: {frontmatter: {Published: {eq: true}}}
+        sort: {frontmatter: {Date: {start: DESC}}}
+      ) {
+        nodes {
+          id
+          frontmatter {
+            title
+            Published
+            Slug
+            Date{
+              start(formatString: "YYYY.MM.DD")
+            }
+          }
+        }
+      }
+    }
+  `).then(result => {
+    const posts = result.data.allMarkdownRemark.nodes
+
+    posts.forEach((post, index) => {
+      const previousPostId = index === 0 ? null : posts[index - 1].id
+      const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
+
+      createPage({
+        path: `/blog/articles/${post.frontmatter.Slug}`,
+        component: path.resolve(`./src/templates/blog_article.js`),
+        context: {
+          id: post.id,
+          slug: post.frontmatter.Slug,
+          previousPostId,
+          nextPostId,
+        },
+      })
+    })
+  })
 }

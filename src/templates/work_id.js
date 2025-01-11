@@ -5,7 +5,7 @@ import moment from 'moment'
 import Layout from '../components/layout'
 
 
-const About = ({location, pageContext}) => {
+const WorkId = ({location, pageContext}) => {
   const { work } = pageContext
   return (
     <Layout
@@ -48,4 +48,4 @@ const About = ({location, pageContext}) => {
   )
 }
 
-export default About
+export default WorkId
