@@ -4,7 +4,7 @@ import '../styles/globals.css'
 
 import moment from 'moment'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faXTwitter, faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import Header from './header'
 
@@ -43,7 +43,10 @@ const Layout = ({ children, location, title, headerDisplayPos }) => {
           <footer className='mt-56 pt-6 pb-16'>
             <p className='space-x-8 mb-8'>
               <a href="https://twitter.com/d_forest" target='_blank' rel='noopener noreferrer' className='text-4xl'>
-                <FontAwesomeIcon icon={faTwitter} />
+                <FontAwesomeIcon icon={faXTwitter} />
+              </a>
+              <a href="https://www.instagram.com/d_forest/" target='_blank' rel='noopener noreferrer' className='text-4xl'>
+                <FontAwesomeIcon icon={faInstagram} />
               </a>
               <a href="https://github.com/dforest" target='_blank' rel='noopener noreferrer' className='text-4xl'>
                 <FontAwesomeIcon icon={faGithub} />
