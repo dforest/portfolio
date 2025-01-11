@@ -4,8 +4,7 @@ const Parser = require('rss-parser')
 const rss = [
   `https://zenn.dev/d_forest/feed`,
   `https://note.com/d_forest/rss`,
-  `https://qiita.com/d_forest/feed`,
-  `https://note.mkitlab.com/index.rss`
+  `https://qiita.com/d_forest/feed`
 ]
 const parser = new Parser()
 const count = 40
