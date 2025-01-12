@@ -117,7 +117,7 @@
       position: absolute;
       left: -0.15rem;
       top: 0px;
-      background-color: var(--color-background);
+      background: var(--color-background);
       width: 12px;
       height: 19px;
     }
@@ -135,8 +135,12 @@
   }
 
   .axis-card {
-    background-color: rgba(255, 255, 255, .05);
+    background: rgba(255, 255, 255, .05);
     color: var(--color-text-700);
+
+    &:hover {
+      background: rgba(255, 255, 255, .1);
+    }
 
     img {
       width: 16px;
@@ -145,8 +149,12 @@
   }
 
   .blog-card {
-    background-color: rgba(255, 255, 255, .05);
+    background: rgba(255, 255, 255, .05);
     color: var(--color-text-700);
+
+    &:hover {
+      background: rgba(255, 255, 255, .1);
+    }
   }
 
   .blog-post {
@@ -200,9 +208,15 @@
     }
 
     .gatsby-remark-link-card__container {
-      background-color: rgba(255, 255, 255, .05);
+      background: rgba(255, 255, 255, .05);
       border: 1px solid rgba(255, 255, 255, .1);
+      transition: 0s;
       border-radius: 0.5rem;
+
+      &:hover {
+        background: rgba(255, 255, 255, .1);
+        border: 1px solid rgba(255, 255, 255, .15);
+      }
     }
   }
 }
