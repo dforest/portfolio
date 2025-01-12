@@ -19,7 +19,7 @@ const About = ({location}) => {
       <p className='mt-14'>ワークスアプリケーションズのソフトウェアエンジニア、奇兵隊のCPO(Chief Product Officer)を経て現在はPARTYに所属。<br/>
       バックエンド、Androidアプリの設計・開発を中心に、ディレクションからマネジメントまでだいたいなんでもやります。</p>
 
-      <p className='mt-4'>最近、個人でゲーム制作(UE5)をはじめました。</p>
+      <p className='mt-4'>最近、個人でゲーム制作をはじめました。</p>
 
       <p className='mt-4'><Link to='/works'>{'See Works->'}</Link></p>
 
