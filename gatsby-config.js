@@ -7,8 +7,7 @@ module.exports = {
     description: `Keita MORI / Technical Director, This is my portfolio.`,
     twitterUsername: `@d_forest`,
     siteUrl: `https://mkitlab.com/`,
-    image: `src/images/og_image.png`,
-    iconImage: `src/images/icon.png`,
+    image: `/images/og_image.png`,
   },
   plugins: [
     {
