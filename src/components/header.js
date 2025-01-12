@@ -15,7 +15,7 @@ const Header = ({location, displayPos}) => {
   })
 
   const scrollTop = () => {
-    return Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop)
+    return Math.max(window.scrollY, document.documentElement.scrollTop, document.body.scrollTop)
   }
 
   const onScroll = () => {
@@ -45,6 +45,11 @@ const Header = ({location, displayPos}) => {
           <li className={ location.pathname.startsWith('/works/') ? 'active' : ''}>
             <Link to='/works'>
               { location.pathname.startsWith('/works/') ? 'Works.' : 'Works' }
+            </Link>
+          </li>
+          <li className={ location.pathname.startsWith('/blog/') ? 'active' : ''}>
+            <Link to='/blog'>
+              { location.pathname.startsWith('/blog/') ? 'Blog.' : 'Blog' }
             </Link>
           </li>
           <li className={ location.pathname.startsWith('/posts/') ? 'active' : ''}>

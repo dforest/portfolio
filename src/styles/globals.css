@@ -117,7 +117,7 @@
       position: absolute;
       left: -0.15rem;
       top: 0px;
-      background-color: var(--color-background);
+      background: var(--color-background);
       width: 12px;
       height: 19px;
     }
@@ -135,12 +135,88 @@
   }
 
   .axis-card {
-    background-color: rgba(255, 255, 255, .05);
+    background: rgba(255, 255, 255, .05);
     color: var(--color-text-700);
+
+    &:hover {
+      background: rgba(255, 255, 255, .1);
+    }
 
     img {
       width: 16px;
       height: 16px;
+    }
+  }
+
+  .blog-card {
+    background: rgba(255, 255, 255, .05);
+    color: var(--color-text-700);
+
+    &:hover {
+      background: rgba(255, 255, 255, .1);
+    }
+  }
+
+  .blog-post {
+    h1, h2, h3, h4 {
+      color: var(--color-text-700);
+      line-height: 1;
+      font-style: normal;
+      font-weight: bold;
+      font-family: Inter, var(--default-font-family);
+      margin-top: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      margin-top: 1rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-top: 2rem;
+
+      &.blog-info {
+        font-size: 1rem;
+        line-height: 1;
+        margin-top: 0;
+      }
+    }
+
+    .gatsby-remark-link-card__container,
+    .gatsby-remark-link-card__title,
+    .gatsby-remark-link-card__description,
+    .gatsby-remark-link-card__url {
+      color: var(--color-text-700);
+    }
+
+    .gatsby-remark-link-card__container {
+      background: rgba(255, 255, 255, .05);
+      border: 1px solid rgba(255, 255, 255, .1);
+      transition: 0s;
+      border-radius: 0.5rem;
+
+      &:hover {
+        background: rgba(255, 255, 255, .1);
+        border: 1px solid rgba(255, 255, 255, .15);
+      }
     }
   }
 }

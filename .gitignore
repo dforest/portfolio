@@ -11,3 +11,5 @@ package-lock.json
 src/data/posts.json
 
 .vercel
+.env
+.env.*

@@ -2,13 +2,13 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
+import { SEO } from '../components/seo'
 
 
 const About = ({location}) => {
   return (
     <Layout
       location={location}
-      title='About ME.'
     >
       <h1 className='mt-16 text-6xl font-semibold'>
         Keita MORI.
@@ -50,5 +50,12 @@ const About = ({location}) => {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <SEO
+    title="About Keita MORI. | Mkit lab."
+    description="Keita MORI / Technical Director, Technical Project Manager, Softwere Engineer and Indie Game Developer."
+  />
+)
 
 export default About
