@@ -6,6 +6,7 @@ import FeaturedWorks from '../components/featured_works'
 import BlogPosts from '../components/blog_posts'
 import Posts from  '../components/posts'
 import HeaderTitle from '../images/title.svg'
+import { SEO } from '../components/seo'
 
 
 const HomeIndex = ({data, location}) => {
@@ -41,6 +42,10 @@ const HomeIndex = ({data, location}) => {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <SEO />
+)
 
 export const query = graphql`
   query {

@@ -8,6 +8,7 @@ import formatCategory from '../utils/formatCategory'
 import Layout from '../components/layout'
 import BlogPosts from '../components/blog_posts'
 import BlogCategories from '../components/blog_categories'
+import { SEO } from '../components/seo'
 
 const Blog = ({data, location}) => {
 
@@ -39,7 +40,6 @@ const Blog = ({data, location}) => {
   return (
     <Layout
       location={location}
-      title='Blog.'
     >
       <h1 className='mt-16 text-6xl font-semibold'>
         Blog.
@@ -68,6 +68,13 @@ const Blog = ({data, location}) => {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <SEO
+    title="Blog. | Mkit lab."
+    description="Explore the blog posts by Keita MORI on movie, book, game, and more."
+  />
+)
 
 export const query = graphql`
   query {

@@ -4,6 +4,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import moment from 'moment'
 
 import Layout from '../components/layout'
+import { SEO } from '../components/seo'
 
 
 const Works = ({location}) => {
@@ -49,7 +50,6 @@ const Works = ({location}) => {
   return (
     <Layout
       location={location}
-      title='Works.'
     >
       <h1 className='mt-16 text-6xl font-semibold'>
         Works.
@@ -89,5 +89,12 @@ const Works = ({location}) => {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <SEO
+    title="Works | Mkit Lab"
+    description="Explore the works by Keita Mori, including company projects, personal projects, and more."
+  />
+)
 
 export default Works

@@ -6,9 +6,10 @@ import moment from 'moment'
 import Layout from "../components/layout";
 import BlogPosts from "../components/blog_posts";
 import BlogCategories from '../components/blog_categories'
+import { SEO } from "../components/seo";
 
 const BlogCategory = ({ data, location, pageContext }) => {
-  const { categories } = pageContext
+  const { categories, category } = pageContext
 
   const groupby = (data) => {
     const groups = []
@@ -31,10 +32,9 @@ const BlogCategory = ({ data, location, pageContext }) => {
   return (
     <Layout
       location={location}
-      title='Blog.'
     >
       <h1 className='mt-16 text-6xl font-semibold'>
-        Blog.
+        Blog.<span className="invisible">{` (${category})`}</span>
       </h1>
 
       <div className="my-10">
@@ -60,6 +60,13 @@ const BlogCategory = ({ data, location, pageContext }) => {
     </Layout>
   )
 }
+
+export const Head = ({ pageContext }) => (
+  <SEO
+    title={`Blog. (${pageContext.category}) | Mkit lab.`}
+    description="Explore the blog posts by Keita MORI on movie, book, game, and more."
+  />
+)
 
 export const query = graphql`
   query($category: String!) {

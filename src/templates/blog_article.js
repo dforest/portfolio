@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from '../components/layout'
 import formatCategory from '../utils/formatCategory'
+import { SEO } from '../components/seo'
 
 
 const BlogPost = ({data, location}) => {
@@ -49,6 +50,13 @@ const BlogPost = ({data, location}) => {
   )
 }
 
+export const Head = ({ data }) => (
+  <SEO
+    title={`${data.markdownRemark.frontmatter.title} | Mkit lab.`}
+    description={data.markdownRemark.excerpt}
+  />
+)
+
 export const pageQuery = graphql`
   query BlogPostBySlug(
     $id: String!
@@ -59,6 +67,7 @@ export const pageQuery = graphql`
     markdownRemark(id: {eq: $id}) {
       id
       html
+      excerpt
       frontmatter {
         title
         Slug

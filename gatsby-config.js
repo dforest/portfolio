@@ -4,11 +4,13 @@ console.log(process.env.NOTION_API_TOKEN)
 module.exports = {
   siteMetadata: {
     title: `Mkit lab.`,
-    author: `Keita MORI`,
-    description: `Keita MORI / App Engineer, This is my portfolio.`,
+    description: `Keita MORI / Technical Director, This is my portfolio.`,
+    twitterUsername: `@d_forest`,
+    siteUrl: `https://mkitlab.com/`,
+    image: `src/images/og_image.png`,
+    iconImage: `src/images/icon.png`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

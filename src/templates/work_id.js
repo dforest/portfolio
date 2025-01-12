@@ -3,6 +3,7 @@ import React from 'react'
 import moment from 'moment'
 
 import Layout from '../components/layout'
+import { SEO } from '../components/seo'
 
 
 const WorkId = ({location, pageContext}) => {
@@ -47,5 +48,12 @@ const WorkId = ({location, pageContext}) => {
     </Layout>
   )
 }
+
+export const Head = ({pageContext}) => (
+  <SEO
+    title={`Works by Keita MORI. - ${pageContext.work.caption}`}
+    description={pageContext.work.description}
+  />
+)
 
 export default WorkId
