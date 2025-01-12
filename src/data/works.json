@@ -1,5 +1,46 @@
 [
   {
+    "heroimage": "../images/works/2024/nissan-vc.webp",
+    "date": "2024-03-07",
+    "company": "PARTY",
+    "caption": "Nissan Formula E: VOICE CHARGE",
+    "description": "ウェブサービスの仕様策定、設計を担当。",
+    "slug": "nissan-vc-2024",
+    "featured": false,
+    "role": "Backend Engineer",
+    "tags": [
+      "Installation", "AWS"
+    ],
+    "links": [
+      "https://prty.jp/projects-detail/nissan-voice-charge"
+    ],
+    "images": [
+      "../images/works/2024/nissan-vc-1.webp"
+    ]
+  },
+  {
+    "heroimage": "../images/works/2023/wataridori.webp",
+    "date": "2023-09-20",
+    "company": "PARTY",
+    "caption": "渡り鳥ブックス",
+    "description": "NFTの設計、実装およびサイト全体のテクニカルディレクションを担当。",
+    "slug": "wataridori-books-2023",
+    "featured": true,
+    "role": "Technical Director/Web3 Engineer",
+    "tags": [
+      "Web3", "Solidity", "Hardhat"
+    ],
+    "links": [
+      "https://prty.jp/projects-detail/wataridori-books",
+      "https://wataridori-books.com/"
+    ],
+    "images": [
+      "../images/works/2023/wataridori-1.png",
+      "../images/works/2023/wataridori-2.png",
+      "../images/works/2023/wataridori-3.png"
+    ]
+  },
+  {
     "heroimage": "../images/works/2023/tsubasa.jpg",
     "date": "2023-03-02",
     "company": "PARTY",
@@ -189,7 +230,7 @@
     "caption": "PARTY x noiz architects EXPO 2025 OSAKA",
     "description": "Kinect v2によるセンサリング開発を担当。",
     "slug": "expo2025-osaka-2019",
-    "featured": true,
+    "featured": false,
     "role": "Sensor Programmer",
     "tags": [
       "Kinect v2", "C++", "PCL"
