@@ -1,4 +1,4 @@
-User-agent: *
-Allow: /
+User-Agent: *
+Disallow:
 
 Sitemap: https://mkitlab.com/sitemap-index.xml
