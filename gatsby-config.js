@@ -6,10 +6,17 @@ module.exports = {
     title: `Mkit lab.`,
     description: `Keita MORI / Technical Director, This is my portfolio.`,
     twitterUsername: `@d_forest`,
-    siteUrl: `https://mkitlab.com/`,
+    siteUrl: `https://mkitlab.com`,
     image: `/images/og_image.png`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'ja'
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
