@@ -36,7 +36,16 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
+              maxWidth: 900,
+            },
+          },
+          {
+            resolve: `gatsby-remark-images-remote`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 900,
             },
           },
           {
